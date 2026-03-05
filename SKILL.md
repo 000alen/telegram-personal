@@ -56,6 +56,6 @@ Any of: `@username`, `+phone`, numeric ID (from `tg dialogs`), or chat title.
 
 From a skill or heartbeat, call via exec:
 ```bash
-python3 /path/to/scripts/tg.py search "keyword" --limit 10
-python3 /path/to/scripts/tg.py unread
+cd /path/to/telegram-personal && uv run tg search "keyword" --limit 10
+cd /path/to/telegram-personal && uv run tg unread
 ```

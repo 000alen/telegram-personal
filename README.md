@@ -6,18 +6,18 @@ Read-only CLI for personal Telegram account automation via MTProto.
 
 ```bash
 # 1. Get api_id + api_hash from https://my.telegram.org
-# 2. Run setup
+# 2. Run setup (installs deps via uv, runs auth)
 bash scripts/setup.sh
 ```
 
 ## Usage
 
 ```bash
-python3 scripts/tg.py dialogs          # list all chats
-python3 scripts/tg.py read @username    # read messages
-python3 scripts/tg.py search "query"   # search all chats
-python3 scripts/tg.py unread           # unread summary
-python3 scripts/tg.py export @chat -o chat.md  # export to markdown
+uv run tg dialogs          # list all chats
+uv run tg read @username   # read messages
+uv run tg search "query"   # search all chats
+uv run tg unread           # unread summary
+uv run tg export @chat -o chat.md  # export to markdown
 ```
 
 ## OpenClaw Skill
