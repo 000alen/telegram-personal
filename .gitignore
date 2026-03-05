@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+*.session
+*.session-journal
+credentials.json
+.env
+venv/
+dist/
+*.egg-info/
